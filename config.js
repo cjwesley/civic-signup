@@ -10,7 +10,7 @@
 //   fallback offers a prefilled "mailto:" link to this address.
 // ---------------------------------------------------------------------------
 window.CIVIC_SIGNUP_CONFIG = {
-  SUBMIT_ENDPOINT: "",
+  SUBMIT_ENDPOINT: "https://script.google.com/macros/s/AKfycbxoVcp_AYrWsA8JyeNDey2yCER95Qnq769ym63GONIN0Fn-FB6pOmZlSeDkXA4zpFn3/exec",
   FALLBACK_EMAIL: "",
   SITE_NAME: "Trustee Cory J. Wesley",
   HOME_URL: "https://corywesley.com",
