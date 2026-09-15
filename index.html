@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Civic Signup · Trustee Cory J. Wesley</title>
+  <meta name="description" content="Sign up for volunteer work, an internship, or a Trustee Shadow Day with Oak Park Village Trustee Cory J. Wesley.">
+  <meta property="og:title" content="Student Civic Signup · Trustee Cory J. Wesley">
+  <meta property="og:description" content="Volunteer, intern, or shadow a Village Trustee for a day. Students, sign up here.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2338B6FF'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Montserrat,Arial,sans-serif' font-weight='900' font-size='30' fill='%23111'%3ECW%3C/text%3E%3Crect x='12' y='48' width='40' height='5' fill='%23FF66C4'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#signup">Skip to the signup form</a>
+
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <a class="wordmark" href="https://corywesley.com" aria-label="Cory J. Wesley, Oak Park Trustee, home page">
+        <span class="wordmark-first">Cory J.</span>
+        <span class="wordmark-last">Wesley</span>
+        <span class="wordmark-rule"><i></i><em>Oak Park Trustee</em></span>
+      </a>
+      <div class="hero-copy">
+        <p class="eyebrow">Students &amp; young adults</p>
+        <h1>Get involved in how Oak Park works.</h1>
+        <p class="lede">Volunteer on a project, intern with the Trustee's office, or spend a day shadowing a Village Trustee. Tell us what you're interested in and we'll follow up.</p>
+        <a class="btn btn-dark" href="#signup">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap options" aria-labelledby="ways-heading">
+      <h2 id="ways-heading" class="section-title">Three ways to get involved</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="card-num">01</span>
+          <h3>Volunteer work</h3>
+          <p>Help on community projects, events, and outreach in Oak Park. Flexible hours, real impact, and a reference when you need one.</p>
+        </article>
+        <article class="card">
+          <span class="card-num">02</span>
+          <h3>Internship</h3>
+          <p>A structured, project-based role working alongside Trustee Wesley on research, policy analysis, communications, or data.</p>
+        </article>
+        <article class="card card-accent">
+          <span class="card-num">03</span>
+          <h3>Trustee Shadow Day</h3>
+          <p>One full day inside Village Hall seeing how an elected official prepares for a Village Board meeting. <a href="#shadow-day">What the day looks like</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="form-band" id="signup" aria-labelledby="signup-heading">
+      <div class="wrap wrap-narrow">
+        <h2 id="signup-heading" class="section-title">Sign up</h2>
+        <p class="section-sub">Takes about two minutes. We only use your info to follow up about the opportunities you pick.</p>
+
+        <form id="signup-form" class="form" novalidate>
+          <div class="field">
+            <label for="name">Student name <span class="req" aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required maxlength="120" placeholder="First and last name">
+            <p class="error" id="name-error" hidden>Please enter your name.</p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required maxlength="200" inputmode="email" placeholder="you@example.com">
+            <p class="error" id="email-error" hidden>Please enter a valid email address.</p>
+          </div>
+
+          <fieldset class="field">
+            <legend>I'm interested in <span class="req" aria-hidden="true">*</span> <span class="hint">(choose all that apply)</span></legend>
+            <div class="checks">
+              <label class="check">
+                <input type="checkbox" name="volunteer" id="volunteer" value="yes">
+                <span class="check-box" aria-hidden="true"></span>
+                <span class="check-text"><strong>Volunteer work</strong><small>Community projects and events</small></span>
+              </label>
+              <label class="check">
+                <input type="checkbox" name="internship" id="internship" value="yes">
+                <span class="check-box" aria-hidden="true"></span>
+                <span class="check-text"><strong>Internship</strong><small>Structured, project-based role</small></span>
+              </label>
+              <label class="check">
+                <input type="checkbox" name="shadowDay" id="shadowDay" value="yes">
+                <span class="check-box" aria-hidden="true"></span>
+                <span class="check-text"><strong>Trustee Shadow Day</strong><small>One day inside Village Hall</small></span>
+              </label>
+            </div>
+            <p class="error" id="interest-error" hidden>Please pick at least one.</p>
+          </fieldset>
+
+          <div class="field field-desc" id="desc-field">
+            <label for="description">Tell us about the volunteer work or internship you're interested in <span class="req req-desc" aria-hidden="true">*</span></label>
+            <p class="hint hint-desc">What kind of work interests you, what skills you'd bring, and when you're available. One box covers both volunteer work and internships.</p>
+            <textarea id="description" name="description" rows="5" maxlength="2000" placeholder="For example: I'm a junior at OPRF interested in housing policy. I can help with research or events on weekday afternoons."></textarea>
+            <div class="desc-meta"><span class="counter" id="desc-count">0 / 2000</span></div>
+            <p class="error" id="description-error" hidden>Please tell us a little about what you're interested in.</p>
+          </div>
+
+          <!-- honeypot: real people never see or fill this -->
+          <div class="hp" aria-hidden="true">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn btn-primary" id="submit-btn">Submit signup</button>
+            <p class="fine">By submitting, you agree to be contacted about the opportunities you selected.</p>
+          </div>
+          <p class="status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div id="success" class="panel panel-success" hidden>
+          <h3>You're signed up.</h3>
+          <p id="success-msg">Thanks! We'll be in touch at the email you provided.</p>
+          <button type="button" class="btn btn-ghost" id="another-btn">Submit another signup</button>
+        </div>
+
+        <div id="fallback" class="panel panel-fallback" hidden>
+          <h3>One more step</h3>
+          <p>Online submissions aren't switched on yet, so please send your signup by email. Copy the summary below (or use the email button) and it will reach the Trustee's office.</p>
+          <pre id="fallback-text" class="summary"></pre>
+          <div class="panel-actions">
+            <button type="button" class="btn btn-primary" id="copy-btn">Copy summary</button>
+            <a class="btn btn-dark" id="mailto-btn" href="#" hidden>Open in email</a>
+            <button type="button" class="btn btn-ghost" id="fallback-back">Back to form</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap wrap-narrow shadow" id="shadow-day" aria-labelledby="shadow-heading">
+      <p class="eyebrow eyebrow-pink">Trustee Shadow Day</p>
+      <h2 id="shadow-heading" class="section-title">What a Shadow Day looks like</h2>
+      <p class="lede">A Trustee Shadow Day puts you inside Village Hall for one day to see how an elected official does the work behind a Village Board meeting. It's less about watching a meeting and more about learning how decisions get shaped before anyone votes.</p>
+
+      <ol class="timeline">
+        <li>
+          <h3>Agenda grooming at Village Hall</h3>
+          <p>Sit in on the agenda grooming process, where staff and the Trustee work through the items proposed for an upcoming Village Board meeting. You'll see how an item moves from a department request to a board packet, what gets pulled, what gets deferred, and why.</p>
+        </li>
+        <li>
+          <h3>Evaluate the agenda like an elected official</h3>
+          <p>Work through the draft agenda from a Trustee's perspective: What is the Board actually being asked to decide? Who does this affect? What does it cost, and what is the trade-off? What questions should be asked of staff before it reaches a vote?</p>
+        </li>
+        <li>
+          <h3>Read a board packet the way a Trustee does</h3>
+          <p>Learn how to read staff reports, ordinances, resolutions, and budget items quickly, find the parts that matter, and flag where the public record is thin.</p>
+        </li>
+        <li>
+          <h3>Meet the people who make Village Hall run</h3>
+          <p>Short conversations with Village staff in areas like the Clerk's office, Development Services, Finance, or Public Works, depending on what's on that week's agenda.</p>
+        </li>
+        <li>
+          <h3>Constituent work</h3>
+          <p>See how resident emails, calls, and requests get triaged, routed to staff, and followed up on. This is a large part of the day-to-day job that rarely makes the news.</p>
+        </li>
+        <li>
+          <h3>Debrief with Trustee Wesley</h3>
+          <p>Wrap up with a one-on-one conversation: what surprised you, what you'd have decided differently, and what a path into public service could look like for you.</p>
+        </li>
+      </ol>
+
+      <div class="callout">
+        <h3>Good to know</h3>
+        <ul>
+          <li>Open to high school and college students. Younger students are welcome with a parent or guardian's consent.</li>
+          <li>Dates are scheduled around the Village Board meeting calendar, typically on a weekday.</li>
+          <li>If the day includes a public Village Board meeting, you're welcome to attend it that evening.</li>
+          <li>Dress is business casual. Bring a notebook and questions.</li>
+        </ul>
+        <a class="btn btn-primary" href="#signup">Sign up for a Shadow Day</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p><strong>Cory J. Wesley</strong> · Oak Park Village Trustee</p>
+      <p><a href="https://corywesley.com">corywesley.com</a> · <a href="https://www.facebook.com/CoryforOPTrustee/" rel="noopener">Facebook</a></p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
